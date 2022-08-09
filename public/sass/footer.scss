@@ -1,0 +1,36 @@
+// $primary-color: #293462;
+// $secondary-color: #C15A7D;
+// $background: #FFB860;
+// $font-light: white;
+// $font-dark: black;
+$primary-color: #D0A616;
+$secondary-color: #007B70;
+$background: #C0564B;
+$header-background: #F5E1DA;
+$font-light: white;
+$font-dark: black;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.App {
+    .home {
+        .footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1em;
+            height: 100vh;
+            .box {
+                position: relative;
+                height: 100px;
+                width: 80%;
+                background-color: #D0A616;
+                border-radius: 25px;
+                padding: 10px;
+            }
+        }
+    }
+}
