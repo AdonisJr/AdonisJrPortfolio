@@ -62,10 +62,10 @@ function NavBody({handleNavToggle}){
             <a onClick={handleNavToggle} href="#projects">
                 PROJECTS
             </a>
-            <a onClick={handleNavToggle} href="#">
+            <a onClick={handleNavToggle} href="#about">
                 ABOUT
             </a>
-            <a onClick={handleNavToggle} href="#">
+            <a onClick={handleNavToggle} href="#contact">
                 CONTACT
             </a>
         </div>

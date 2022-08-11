@@ -11,6 +11,6 @@ export default function Projects() {
             <h1>Projects</h1>
       </div>
       < Content />
-      Index</div>
+    </div>
   )
 }

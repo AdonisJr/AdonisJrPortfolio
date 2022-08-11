@@ -1,10 +1,11 @@
 import React from 'react'
-import profile from '../../images/profile.jpg';
+import profile from '../../images/profile.png';
 import {Typewriter} from 'react-simple-typewriter'
 import Technology from '../Technology/Technology'
 import Projects from '../Projects/Projects';
 import light from '../../images/light.png';
 import dark from '../../images/dark.png';
+import About from '../about/About';
 
 export default function Body({handleNavToggle, navClose, technologies, isToggle, handleIsToggle}) {
     
@@ -36,6 +37,7 @@ export default function Body({handleNavToggle, navClose, technologies, isToggle,
         < Technology technologies={technologies} />
    
         < Projects />
+        < About />
     </div>
 
 
@@ -44,6 +46,35 @@ export default function Body({handleNavToggle, navClose, technologies, isToggle,
 function BodyContent(){
   return(
     <div id='home' className="home">
+      <div className="left">
+        <div className="img-profile">
+            <img src={profile} alt="" />
+        </div>
+      </div>
+      <div className="right">
+      
+        <h2>Hello! I'm </h2>
+        <h1> <span className='name mt-3'>ADONIS JR SUICO</span></h1>
+        <h2 className='mt-3'>Full Stack Web Developer</h2>
+      </div>
+      
+      <div className="border-">
+          <div className="line">
+
+          </div>
+          <div className="circle">
+
+          </div>
+          <div className="circle">
+
+          </div>
+          <div className="circle">
+
+          </div>
+          <div className="line2">
+
+          </div>
+        </div>
 
     </div>
   )

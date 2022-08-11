@@ -8,7 +8,108 @@
 .App .home {
   position: relative;
   min-height: 100vh;
+  width: 100vh;
+}
+
+.App .home .header {
+  position: fixed;
+  height: 100%;
+  z-index: 20;
+}
+
+.App .home .header .nav {
+  position: inherit;
+  width: 15em;
+  height: 100%;
+  right: 0;
+  background-color: #D0A616;
+  z-index: 10;
+  padding: 10px;
+}
+
+.App .home .header .nav .nav-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 10em;
   width: 100%;
+  padding: 0.7em;
+}
+
+.App .home .header .nav .nav-header .close-button {
+  position: absolute;
+  left: 1.5em;
+  top: 1.5em;
+}
+
+.App .home .header .nav .nav-header .close-button a {
+  text-decoration: none;
+  color: #C0564B;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.App .home .header .nav .nav-header .close-button a:hover {
+  color: white;
+}
+
+.App .home .header .nav .nav-header .nav-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.App .home .header .nav .nav-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.App .home .header .nav .nav-body a {
+  width: 100%;
+  text-decoration: none;
+  padding: 1em;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.App .home .header .nav .nav-body a:hover {
+  background-color: #C0564B;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+}
+
+.App .home .header .background {
+  position: inherit;
+  height: 100%;
+  width: 100%;
+  background-color: #007B70;
+  z-index: 0;
+  opacity: 0.9;
 }
 
 .App .home .body {
@@ -67,4 +168,100 @@
 
 .App .home .body .toggle img:hover {
   background-color: #007B70;
+}
+
+.App .home .body .home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.App .home .body .home .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  width: 25%;
+  height: 90vh;
+}
+
+.App .home .body .home .left .img-profile {
+  position: absolute;
+  min-width: 300px;
+  min-height: 380px;
+  right: -7em;
+  background-color: white;
+  border: 5px solid #D0A616;
+}
+
+.App .home .body .home .left .img-profile img {
+  width: 300px;
+  height: 380px;
+}
+
+.App .home .body .home .right {
+  width: 75%;
+  height: 90vh;
+  border-left: 5px solid #007B70;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App .home .body .home .right .name {
+  font-size: larger;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.App .home .body .home .border- {
+  padding: .5em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+
+.App .home .body .home .border- .line {
+  height: 5px;
+  width: 30%;
+  border-top: 5px solid #007B70;
+}
+
+.App .home .body .home .border- .circle {
+  width: 30px;
+  height: 30px;
+  border: 5px solid #D0A616;
+  background-color: #007B70;
+}
+
+.App .home .body .home .border- .line2 {
+  height: 5px;
+  width: 100%;
+  border-top: 5px solid #007B70;
 }
