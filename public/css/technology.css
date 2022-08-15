@@ -111,3 +111,12 @@
   width: 100px;
   height: auto;
 }
+
+@media screen and (max-width: 600px) {
+  .App .home .body .technology .list {
+    border-radius: 25px;
+  }
+  .App .home .body .technology .list2 {
+    border-radius: 25px;
+  }
+}

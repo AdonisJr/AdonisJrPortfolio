@@ -43,7 +43,7 @@ function NavHeader({handleNavToggle}){
                     </a>
                     
                 </div>
-                <h1>LOGO</h1>
+                {/* <h1>LOGO</h1> */}
             </div>
            
         </div>
@@ -65,7 +65,7 @@ function NavBody({handleNavToggle}){
             <a onClick={handleNavToggle} href="#about">
                 ABOUT
             </a>
-            <a onClick={handleNavToggle} href="#contact">
+            <a onClick={handleNavToggle} href="#contact-me">
                 CONTACT
             </a>
         </div>

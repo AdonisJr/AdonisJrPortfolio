@@ -7,10 +7,20 @@
 }
 
 .App .home .body .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2em;
   min-height: 100vh;
   width: 100%;
   position: inherit;
   margin-top: 10%;
+  background-color: #007B70;
+  padding-bottom: 5em;
 }
 
 .App .home .body .about .list-header {
@@ -36,4 +46,151 @@
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   font-family: 'Montserrat', sans-serif;
+}
+
+.App .home .body .about .sec-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  height: 100%;
+  padding: 0.1em 5em;
+  gap: 2em;
+}
+
+.App .home .body .about .sec-2 .picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .5em;
+}
+
+.App .home .body .about .sec-2 .picture img {
+  width: 230px;
+  height: 280px;
+  border: 0.3em solid white;
+}
+
+.App .home .body .about .sec-2 .picture .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.App .home .body .about .sec-2 .picture .contact svg {
+  color: black;
+}
+
+.App .home .body .about .sec-2 .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.App .home .body .about .sec-2 .content span {
+  color: white;
+  font-size: large;
+}
+
+.App .home .body .about .sec-2 .content h1,
+.App .home .body .about .sec-2 .content h3,
+.App .home .body .about .sec-2 .content h5 {
+  color: black;
+}
+
+.App .home .body .about .work-experience {
+  width: 100%;
+  padding: 0 5em;
+}
+
+.App .home .body .about .work-experience .work-card {
+  background-color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .App .home .body .about {
+    min-height: 100vh;
+    width: 100%;
+    position: inherit;
+    margin-top: 10%;
+    background-color: #007B70;
+  }
+  .App .home .body .about .sec-2 {
+    padding: 0.1em 1em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: auto;
+    height: 100%;
+    gap: 2em;
+  }
+  .App .home .body .about .sec-2 .picture {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: .5em;
+  }
+  .App .home .body .about .sec-2 .picture img {
+    width: 230px;
+    height: 280px;
+    border: 0.3em solid white;
+  }
+  .App .home .body .about .sec-2 .picture .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .App .home .body .about .sec-2 .picture .contact svg {
+    color: black;
+  }
+  .App .home .body .about .sec-2 .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .App .home .body .about .sec-2 .content span {
+    color: white;
+    font-size: large;
+  }
+  .App .home .body .about .work-experience {
+    padding: 0 .5em;
+  }
+  .App .home .body .about .work-experience .work-card {
+    background-color: white;
+  }
 }

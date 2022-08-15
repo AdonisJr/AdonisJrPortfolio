@@ -89,3 +89,20 @@ $font-dark: black;
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .App {
+        .home {
+            .body {
+                .technology {
+                    .list {
+                        border-radius: 25px;
+                    }
+                    .list2 {
+                        border-radius: 25px;
+                    }
+                }
+            }
+        }
+    }
+}

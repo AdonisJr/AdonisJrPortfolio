@@ -20,10 +20,15 @@ $font-dark: black;
     .home {
         .body {
             .about {
+                display: flex;
+                flex-direction: column;
+                gap: 2em;
                 min-height: 100vh;
                 width: 100%;
                 position: inherit;
                 margin-top: 10%;
+                background-color: $secondary-color;
+                padding-bottom: 5em;
                 .list-header {
                     position: -webkit-sticky;
                     position: -moz-sticky;
@@ -41,6 +46,109 @@ $font-dark: black;
                     z-index: 1;
                     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
                     font-family: 'Montserrat', sans-serif;
+                }
+                .sec-2 {
+                    display: flex;
+                    width: auto;
+                    height: 100%;
+                    padding: 0.1em 5em;
+                    gap: 2em;
+                    .picture {
+                        display: flex;
+                        flex-direction: column;
+                        gap: .5em;
+                        img {
+                            width: 230px;
+                            height: 280px;
+                            border: 0.3em solid white;
+                        }
+                        .contact {
+                            display: flex;
+                            justify-content: space-evenly;
+                            svg {
+                                color: black;
+                            }
+                        }
+                    }
+                    .content {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        span {
+                            color: white;
+                            font-size: large;
+                        }
+                        h1,
+                        h3,
+                        h5 {
+                            color: black;
+                        }
+                    }
+                }
+                .work-experience {
+                    width: 100%;
+                    padding: 0 5em;
+                    .work-card {
+                        background-color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .App {
+        .home {
+            .body {
+                .about {
+                    min-height: 100vh;
+                    width: 100%;
+                    position: inherit;
+                    margin-top: 10%;
+                    background-color: $secondary-color;
+                    .sec-2 {
+                        padding: 0.1em 1em;
+                        flex-direction: column;
+                        align-items: center;
+                        // edited
+                        display: flex;
+                        width: auto;
+                        height: 100%;
+                        gap: 2em;
+                        .picture {
+                            display: flex;
+                            flex-direction: column;
+                            gap: .5em;
+                            img {
+                                width: 230px;
+                                height: 280px;
+                                border: 0.3em solid white;
+                            }
+                            .contact {
+                                display: flex;
+                                justify-content: space-evenly;
+                                svg {
+                                    color: black;
+                                }
+                            }
+                        }
+                        .content {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            span {
+                                color: white;
+                                font-size: large;
+                            }
+                        }
+                    }
+                    .work-experience {
+                        padding: 0 .5em;
+                        .work-card {
+                            background-color: white;
+                        }
+                    }
                 }
             }
         }

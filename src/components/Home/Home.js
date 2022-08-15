@@ -48,7 +48,7 @@ export default function Home() {
     },
 ];
     const [navClose, setNavClose] = useState(true);
-    const [isToggle, setIsToggle] = useState(true);
+    const [isToggle, setIsToggle] = useState(false);
 
     const handleNavToggle = ()=>{
         // to open and close navbar
