@@ -29,7 +29,7 @@ function NavHeader({handleNavToggle}){
             <div className="nav-logo">
                 <div className="close-button"
                 data-bs-toggle="tooltip" data-bs-placement="bottom" title="Close">
-                    <a onClick={handleNavToggle}>
+                    <a href='#home' onClick={handleNavToggle}>
                         <svg 
                         xmlns="http://www.w3.org/2000/svg" 
                         width="30" 
