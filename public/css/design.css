@@ -108,7 +108,7 @@
 .App .home .header .background {
   position: inherit;
   height: 100%;
-  width: 100%;
+  width: 100vw;
   background-color: #007B70;
   z-index: 0;
   opacity: 0.9;
@@ -272,10 +272,103 @@
   .App .home {
     position: relative;
     min-height: 100vh;
-    width: 100vh;
+    width: 100vw;
+  }
+  .App .home .header {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 20;
+  }
+  .App .home .header .nav {
+    position: inherit;
+    width: 15em;
+    height: 100vh;
+    left: 0;
+    background-color: #D0A616;
+    z-index: 10;
+    padding: 10px;
+  }
+  .App .home .header .nav .nav-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 10em;
+    width: 100%;
+    padding: 0.7em;
+  }
+  .App .home .header .nav .nav-header .close-button {
+    position: absolute;
+    left: 1.5em;
+    top: 1.5em;
+  }
+  .App .home .header .nav .nav-header .close-button a {
+    text-decoration: none;
+    color: #C0564B;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .App .home .header .nav .nav-header .close-button a:hover {
+    color: white;
+  }
+  .App .home .header .nav .nav-header .nav-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  .App .home .header .nav .nav-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .App .home .header .nav .nav-body a {
+    cursor: pointer;
+    width: 100%;
+    text-decoration: none;
+    padding: 1em;
+    color: black;
+    cursor: pointer;
+    font-weight: bolder;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .App .home .header .nav .nav-body a:hover {
+    background-color: #C0564B;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+  }
+  .App .home .header .background {
+    position: inherit;
+    height: 100%;
+    width: 100vw;
+    background-color: #007B70;
+    z-index: 0;
+    opacity: 0.9;
   }
   .App .home .body {
-    width: 100%;
+    width: 100vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -289,7 +382,7 @@
   }
   .App .home .body .open-navbar {
     position: fixed;
-    right: 0;
+    right: 90px;
     margin: 30px;
     cursor: pointer;
     -webkit-transition: 0.4s;
@@ -308,7 +401,7 @@
   }
   .App .home .body .toggle {
     position: fixed;
-    right: 20px;
+    right: 110px;
     top: 70px;
     z-index: 16;
     -webkit-transition: 0.4s;
@@ -377,6 +470,7 @@
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+    padding-right: 0.5em;
   }
   .App .home .body .home .right .name {
     font-size: larger;
