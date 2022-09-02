@@ -56,11 +56,11 @@ export default function About() {
                 <tbody>
                   
                   <tr>
-                    <td><b>Oct. 2019 - Aug. 2020 (Data Capture Operator at Filmetrics Corporation)</b></td>
+                    <td><b>2019 - 2020 (Data Capture Operator at Filmetrics Corporation)</b></td>
                     <td>Responsible in getting customer information for UMID I.D.</td>
                   </tr>
                     <tr>
-                      <td><b>2017-2018 (Dental X-Ray Technician at Fulgarinas Dental Clinic)</b></td>
+                      <td><b>2018-2019 (Dental X-Ray Technician at Fulgarinas Dental Clinic)</b></td>
                       <td>Responsible in capturing dental X-Ray Image.</td>
                     </tr>
                   <tr>
